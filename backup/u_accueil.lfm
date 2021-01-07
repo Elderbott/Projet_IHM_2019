@@ -1,0 +1,74 @@
+object f_accueil: Tf_accueil
+  Left = 515
+  Height = 870
+  Top = 288
+  Width = 1003
+  Caption = 'f_accueil'
+  ClientHeight = 870
+  ClientWidth = 1003
+  LCLVersion = '2.0.6.0'
+  object pnl_accueil: TPanel
+    Left = 0
+    Height = 870
+    Top = 0
+    Width = 1003
+    Align = alClient
+    ClientHeight = 870
+    ClientWidth = 1003
+    TabOrder = 0
+    object lbl_lbl1: TLabel
+      Left = 96
+      Height = 72
+      Top = 152
+      Width = 703
+      Alignment = taCenter
+      AutoSize = False
+      Caption = 'Bienvenue'
+      Font.CharSet = ANSI_CHARSET
+      Font.Color = clBlue
+      Font.Height = -48
+      Font.Name = 'Segoe UI'
+      Font.Pitch = fpVariable
+      Font.Quality = fqDraft
+      Font.Style = [fsBold, fsItalic]
+      ParentColor = False
+      ParentFont = False
+    end
+    object lbl_lbl2: TLabel
+      Left = 90
+      Height = 80
+      Top = 328
+      Width = 703
+      Alignment = taCenter
+      AutoSize = False
+      Caption = 'dans l''application de'
+      Font.CharSet = ANSI_CHARSET
+      Font.Color = clBlue
+      Font.Height = -48
+      Font.Name = 'Segoe UI'
+      Font.Pitch = fpVariable
+      Font.Quality = fqDraft
+      Font.Style = [fsBold, fsItalic]
+      ParentColor = False
+      ParentFont = False
+    end
+    object lbl_lbl3: TLabel
+      Left = 96
+      Height = 208
+      Top = 536
+      Width = 697
+      Alignment = taCenter
+      AutoSize = False
+      Caption = 'gestion de la Scolarité'
+      Font.CharSet = ANSI_CHARSET
+      Font.Color = clBlue
+      Font.Height = -48
+      Font.Name = 'Segoe UI'
+      Font.Pitch = fpVariable
+      Font.Quality = fqDraft
+      Font.Style = [fsBold, fsItalic]
+      ParentColor = False
+      ParentFont = False
+    end
+  end
+end

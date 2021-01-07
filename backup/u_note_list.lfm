@@ -1,0 +1,77 @@
+inherited f_note_list: Tf_note_list
+  Left = 1100
+  Height = 463
+  Top = 344
+  Width = 375
+  Caption = 'f_note_list'
+  ClientHeight = 463
+  ClientWidth = 375
+  inherited pnl_titre: TPanel
+    Width = 375
+    ClientWidth = 375
+    object lbl_note_total: TLabel[0]
+      Left = 104
+      Height = 1
+      Top = 8
+      Width = 1
+      ParentColor = False
+    end
+  end
+  inherited pnl_btn: TPanel
+    Top = 429
+    Width = 375
+    ClientWidth = 375
+    inherited pnl_btn_ligne: TPanel
+      Left = 375
+      Width = 0
+      ClientWidth = 0
+      inherited btn_line_detail: TSpeedButton
+        Left = -41
+      end
+      inherited btn_line_add: TSpeedButton
+        Left = -39
+      end
+      inherited btn_line_delete: TSpeedButton
+        Left = -42
+      end
+      inherited btn_line_edit: TSpeedButton
+        Left = -40
+      end
+    end
+  end
+  inherited pnl_affi: TPanel
+    Height = 395
+    Width = 375
+    ClientHeight = 395
+    ClientWidth = 375
+    inherited sg_liste: TStringGrid
+      Height = 395
+      Width = 375
+      ColCount = 3
+      Columns = <      
+        item
+          PickList.Strings = (          )
+          Title.Caption = ''
+          Width = 260
+        end      
+        item
+          PickList.Strings = (          )
+          Title.Caption = ''
+          Width = 45
+        end      
+        item
+          PickList.Strings = (          )
+          Title.Caption = ''
+          Width = 90
+        end>
+      ColWidths = (
+        260
+        45
+        90
+      )
+      Cells = (
+        0
+      )
+    end
+  end
+end

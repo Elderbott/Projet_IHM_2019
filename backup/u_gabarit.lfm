@@ -1,0 +1,95 @@
+object f_gabarit: Tf_gabarit
+  Left = 442
+  Height = 800
+  Top = 62
+  Width = 1200
+  Caption = 'Gestion de la scolarité'
+  ClientHeight = 780
+  ClientWidth = 1200
+  Color = 15461355
+  Font.CharSet = ANSI_CHARSET
+  Font.Color = clBlack
+  Font.Height = -16
+  Font.Name = 'Calibri'
+  Font.Pitch = fpVariable
+  Font.Quality = fqDraft
+  Menu = mnu_main
+  OnShow = FormShow
+  LCLVersion = '2.0.6.0'
+  object pnl_ariane: TPanel
+    Left = 0
+    Height = 30
+    Top = 0
+    Width = 1200
+    Align = alTop
+    Caption = 'fil d''ariane'
+    TabOrder = 0
+  end
+  object pnl_info: TPanel
+    Left = 0
+    Height = 30
+    Top = 750
+    Width = 1200
+    Align = alBottom
+    Caption = 'message d''information '
+    TabOrder = 1
+  end
+  object pnl_travail: TPanel
+    Left = 250
+    Height = 720
+    Top = 30
+    Width = 950
+    Align = alRight
+    Caption = 'zone de travail'
+    TabOrder = 2
+  end
+  object pnl_selection: TPanel
+    Left = 0
+    Height = 720
+    Top = 30
+    Width = 250
+    Align = alClient
+    TabOrder = 3
+  end
+  object mnu_main: TMainMenu
+    left = 129
+    top = 52
+    object item_accueil: TMenuItem
+      Caption = 'Accueil'
+      OnClick = mnu_item_Click
+    end
+    object item_inscrit: TMenuItem
+      Caption = 'Inscrit'
+      object item_liste1: TMenuItem
+        Caption = 'Liste'
+        OnClick = mnu_item_Click
+      end
+      object item_archive: TMenuItem
+        Caption = 'Archive'
+        object item_archive1: TMenuItem
+          Caption = 'Archive N-1'
+          OnClick = mnu_item_Click
+        end
+        object item_archive2: TMenuItem
+          Caption = 'Archive N-2'
+          OnClick = mnu_item_Click
+        end
+      end
+    end
+    object item_filiere: TMenuItem
+      Caption = 'Filière'
+      object item_liste2: TMenuItem
+        Caption = 'Liste'
+        OnClick = mnu_item_Click
+      end
+      object item_statistique: TMenuItem
+        Caption = 'Statistiques'
+        OnClick = mnu_item_Click
+      end
+    end
+    object item_quitter: TMenuItem
+      Caption = 'Quitter'
+      OnClick = item_quitterClick
+    end
+  end
+end
